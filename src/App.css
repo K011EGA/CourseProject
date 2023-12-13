@@ -1,0 +1,102 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 80%;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+.playerContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.midButton {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  opacity: 0;
+  transition: opacity .3s ease;
+  border-radius: 100%;
+  background: rgba(0,0,0,0.5);
+  border: none;
+  cursor: pointer;
+}
+
+
+.skipButton {
+  position: absolute;
+  left: 4em;
+  bottom: 4em;
+  background: rgba(0,0,0,0.5);
+  border-radius: 100%;
+  border: none;
+}
+
+
+.midButton:hover {
+  opacity: 1;
+}
+
+.videoPlayer {
+  border-radius: 1em;
+  z-index: -1;
+}
+
+.controlsContainer {
+  margin-top: -3.5em;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.controlsContainer:hover {
+  opacity: 1;
+}
+
+
+.controls {
+  display: flex;
+  z-index: 1;
+  color: white;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.controlButton {
+  border: none;
+  background: none;
+}
+
+.timeline {
+  width: 100%;
+}
+
+.duration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controlButton:hover {
+  cursor: pointer;
+}
+
+.header {
+  font-size: 300%;
+  padding: 30px;
+  text-align: center;
+  background: #61dafb;
+}
